@@ -21,7 +21,7 @@ export default {
     const tagGroups = parseTagGroups(params.get('tags'));
     const negTagGroups = parseTagGroups(params.get('negative_tags'));
 
-    const entriesUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${genre}/entries.json`;
+    const entriesUrl = `https://raw.githubusercontent.com/NotPiny/Giffy/main/${genre}/entries.json`;
 
     let res;
     try {
