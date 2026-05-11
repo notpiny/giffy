@@ -55,6 +55,7 @@ export default {
     }
 
     let entries = await res.json();
+    entries = entries.filter(e => e.category === category);
 
     if (typeParam) entries = entries.filter(e => e.type === typeParam);
 
