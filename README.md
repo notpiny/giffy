@@ -5,19 +5,20 @@ Gifs in a Jiffy.
 
 Base URL: `https://giffy.piny.dev`
 
-All image assets and entry data are served via [jsDelivr](https://www.jsdelivr.com/) from this GitHub repo.
+All image assets and entry data are served via [jsDelivr](https://www.jsdelivr.com/) from the `NotPiny/Giffy` GitHub repo.
 
 ---
 
-### `GET /:category/random`
+### `GET /:genre/:category/random`
 
-Returns a random image entry from the given category.
+Returns a random image entry from the given genre and category.
 
 **URL Parameters**
 
 | Parameter | Description |
 |---|---|
-| `category` | The image category folder (e.g. `slap`, `hug`) |
+| `genre` | The top-level genre folder (e.g. `anime`, `irl`) |
+| `category` | The category within that genre (e.g. `slap`, `hug`) |
 
 **Query Parameters**
 
@@ -39,7 +40,7 @@ Returns a random image entry from the given category.
   "file": "ml19zR8F",
   "formats": ["gif"],
   "hash": "PyA8iSEsiaEU4LYdN4OpjyAUApGxeMA87SE2UeeqdXY=",
-  "url": "https://cdn.jsdelivr.net/gh/NotPiny/Giffy/slap/assets/ml19zR8F.gif"
+  "url": "https://cdn.jsdelivr.net/gh/NotPiny/Giffy/anime/slap/assets/ml19zR8F.gif"
 }
 ```
 
@@ -47,4 +48,4 @@ Returns a random image entry from the given category.
 
 | Status | Meaning |
 |---|---|
-| `404` | Category doesn't exist, or no entries matched the given filters |
+| `404` | Genre/category doesn't exist, or no entries matched the given filters |
