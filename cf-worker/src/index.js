@@ -21,7 +21,7 @@ export default {
     const tagGroups = parseTagGroups(params.get('tags'));
     const negTagGroups = parseTagGroups(params.get('negative_tags'));
 
-    const entriesUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${genre}/${category}/entries.json`;
+    const entriesUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${genre}/entries.json`;
 
     let res;
     try {
@@ -87,7 +87,7 @@ export default {
       ? (acceptedFormats.find(f => entry.formats.includes(f)) ?? entry.formats[0])
       : entry.formats[0];
 
-    const imageUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${genre}/${category}/assets/${entry.file}.${chosenFormat}`;
+    const imageUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${genre}/assets/${entry.file}.${chosenFormat}`;
 
     if (redirect) return Response.redirect(imageUrl, 302);
 
