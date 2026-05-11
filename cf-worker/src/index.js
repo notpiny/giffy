@@ -3,11 +3,12 @@ export default {
     const url = new URL(request.url);
     const parts = url.pathname.split('/').filter(Boolean);
 
-    if (parts.length < 2 || parts[1] !== 'random') {
+    // Expect /:genre/:category/random
+    if (parts.length < 3 || parts[2] !== 'random') {
       return new Response('Not Found', { status: 404 });
     }
 
-    const category = parts[0];
+    const [genre, category] = parts;
     const params = url.searchParams;
     const redirect = params.get('redirect') === 'true';
     const typeParam = params.get('type');
@@ -20,30 +21,37 @@ export default {
     const tagGroups = parseTagGroups(params.get('tags'));
     const negTagGroups = parseTagGroups(params.get('negative_tags'));
 
-    const entriesUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${category}/entries.json`;
+    const entriesUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${genre}/${category}/entries.json`;
 
-    const cache = caches.default;
-    const cacheKey = new Request(entriesUrl);
+    let res;
+    try {
+      const cache = caches.default;
+      const cacheKey = new Request(entriesUrl);
 
-    let res = await cache.match(cacheKey);
-    if (!res) {
-      res = await fetch(entriesUrl);
-
-      if (!res.ok) {
-        return new Response(JSON.stringify({ error: 'Category not found' }), {
-          status: 404,
-          headers: { 'Content-Type': 'application/json' }
-        });
-      }
-
-      const toCache = res.clone();
-      await cache.put(cacheKey, new Response(toCache.body, {
-        status: toCache.status,
-        headers: {
-          ...Object.fromEntries(toCache.headers),
-          'Cache-Control': 'public, max-age=300'
+      res = await cache.match(cacheKey);
+      if (!res) {
+        res = await fetch(entriesUrl);
+        if (res.ok) {
+          const toCache = res.clone();
+          // Build headers manually to avoid spread issues
+          const headers = new Headers(toCache.headers);
+          headers.set('Cache-Control', 'public, max-age=300');
+          await cache.put(cacheKey, new Response(toCache.body, {
+            status: toCache.status,
+            headers
+          }));
         }
-      }));
+      }
+    } catch {
+      // Cache failed, fall back to a direct fetch
+      res = await fetch(entriesUrl);
+    }
+
+    if (!res || !res.ok) {
+      return new Response(JSON.stringify({ error: 'Category not found' }), {
+        status: 404,
+        headers: { 'Content-Type': 'application/json' }
+      });
     }
 
     let entries = await res.json();
@@ -79,7 +87,7 @@ export default {
       ? (acceptedFormats.find(f => entry.formats.includes(f)) ?? entry.formats[0])
       : entry.formats[0];
 
-    const imageUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${category}/assets/${entry.file}.${chosenFormat}`;
+    const imageUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${genre}/${category}/assets/${entry.file}.${chosenFormat}`;
 
     if (redirect) return Response.redirect(imageUrl, 302);
 
