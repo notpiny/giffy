@@ -130,7 +130,7 @@ export default {
       ? (acceptedFormats.find(f => entry.formats.includes(f)) ?? entry.formats[0])
       : entry.formats[0];
 
-    const imageUrl = `https://cdn.jsdelivr.net/gh/NotPiny/Giffy/${genre}/assets/${entry.file}.${chosenFormat}`;
+    const imageUrl = `https://giffy-r.piny.dev/${genre}/assets/${entry.file}.${chosenFormat}`;
 
     if (redirect) return Response.redirect(imageUrl, 302);
 

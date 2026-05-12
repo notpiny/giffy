@@ -1,11 +1,10 @@
 # Giffy
-Gifs in a Jiffy.
+
+A self-hosted anime gif repository with a Cloudflare Worker API.
 
 ## API
 
 Base URL: `https://giffy.piny.dev`
-
-All image assets and entry data are served via [jsDelivr](https://www.jsdelivr.com/) from the `NotPiny/Giffy` GitHub repo.
 
 ---
 
@@ -17,18 +16,18 @@ Returns a random image entry from the given genre and category.
 
 | Parameter | Description |
 |---|---|
-| `genre` | The top-level genre folder (e.g. `anime`, `irl`) |
-| `category` | The category within that genre (e.g. `slap`, `hug`) |
+| `genre` | The top-level genre folder (e.g. `anime`) |
+| `category` | The image category (e.g. `slap`, `hug`) — filtered from the genre's `entries.json` |
 
 **Query Parameters**
 
 | Parameter | Type | Description |
 |---|---|---|
-| `tags` | `string` | Comma-separated tag filter. Use `&` within a group to require multiple tags. Groups are OR'd, tags within a group are AND'd.<br>Example: `f4f&happy,f4a&happy,f4m` = `(f4f AND happy) OR (f4a AND happy) OR f4m` |
-| `negative_tags` | `string` | Same syntax as `tags`, but excludes matching entries instead |
-| `type` | `string` | Filter by entry type. Either `anim` or `still` |
-| `formats` | `string` | Comma-separated list of acceptable formats (e.g. `gif,webp,mp4`). The first format in this list that the entry supports is used for the URL |
-| `redirect` | `boolean` | If `true`, returns a `302` redirect directly to the image instead of a JSON response |
+| `tags` | `string` | Comma-separated tag filter. Use `&` within a group to AND tags, groups are OR'd.<br>Example: `f4f&happy,f4a&happy,f4m` = `(f4f AND happy) OR (f4a AND happy) OR f4m` |
+| `negative_tags` | `string` | Same syntax as `tags` but excludes matching entries |
+| `type` | `string` | Filter by type: `anim` or `still` |
+| `formats` | `string` | Comma-separated acceptable formats (e.g. `gif,webp`). First match wins for the returned URL |
+| `redirect` | `boolean` | If `true`, returns a `302` redirect directly to the image instead of JSON |
 
 **Response**
 
@@ -40,7 +39,7 @@ Returns a random image entry from the given genre and category.
   "file": "ml19zR8F",
   "formats": ["gif"],
   "hash": "PyA8iSEsiaEU4LYdN4OpjyAUApGxeMA87SE2UeeqdXY=",
-  "url": "https://cdn.jsdelivr.net/gh/NotPiny/Giffy/anime/slap/assets/ml19zR8F.gif"
+  "url": "https://giffy-r.piny.dev/anime/assets/ml19zR8F.gif"
 }
 ```
 
@@ -48,4 +47,4 @@ Returns a random image entry from the given genre and category.
 
 | Status | Meaning |
 |---|---|
-| `404` | Genre/category doesn't exist, or no entries matched the given filters |
+| `404` | Genre/category doesn't exist, or no entries matched the filters |
