@@ -3,6 +3,48 @@ export default {
     const url = new URL(request.url);
     const parts = url.pathname.split('/').filter(Boolean);
 
+    // /:genre — return list of categories for that genre
+    if (parts.length === 1) {
+      const [genre] = parts;
+      const entriesUrl = `https://raw.githubusercontent.com/NotPiny/Giffy/main/${genre}/entries.json`;
+
+      let res;
+      try {
+        const cache = caches.default;
+        const cacheKey = new Request(entriesUrl);
+
+        res = await cache.match(cacheKey);
+        if (!res) {
+          res = await fetch(entriesUrl);
+          if (res.ok) {
+            const toCache = res.clone();
+            const headers = new Headers(toCache.headers);
+            headers.set('Cache-Control', 'public, max-age=300');
+            await cache.put(cacheKey, new Response(toCache.body, {
+              status: toCache.status,
+              headers
+            }));
+          }
+        }
+      } catch {
+        res = await fetch(entriesUrl);
+      }
+
+      if (!res || !res.ok) {
+        return new Response(JSON.stringify({ error: 'Genre not found' }), {
+          status: 404,
+          headers: { 'Content-Type': 'application/json' }
+        });
+      }
+
+      const entries = await res.json();
+      const categories = [...new Set(entries.map(e => e.category))];
+
+      return new Response(JSON.stringify(categories), {
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
     // Expect /:genre/:category/random
     if (parts.length < 3 || parts[2] !== 'random') {
       return new Response('Not Found', { status: 404 });
