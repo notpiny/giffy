@@ -3,6 +3,13 @@ export default {
     const url = new URL(request.url);
     const parts = url.pathname.split('/').filter(Boolean);
 
+    if (parts.length === 0) {
+      return new Response('', {
+        status: 302,
+        headers: { 'Location': 'https://github.com/NotPiny/Giffy' }
+      });
+    }
+
     // /:genre — return list of categories for that genre
     if (parts.length === 1) {
       const [genre] = parts;
