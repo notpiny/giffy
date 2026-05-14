@@ -1,3 +1,4 @@
+// --allow-write --allow-env --allow-net --allow-run
 const incomingDir = `${Deno.env.get('HOME')}/Downloads/incoming/deno`;
 await Deno.mkdir(incomingDir, { recursive: true });
 

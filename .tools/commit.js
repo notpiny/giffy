@@ -1,9 +1,12 @@
 import fs from 'fs';
 import { execSync } from 'child_process';
 
+throw new Error('THIS SCRIPT MAKES A BUNCH OF COMMITS AND AS SUCH A BUNCH OF BUILDS. DISABLED UNTIL I CAN FIGURE OUT A BETTER WAY TO DO THIS.');
+
 const GITHUB_TOKEN = process.env.GIFFY_GH_PAT;
 const REPO = 'NotPiny/Giffy';
 const assetsDir = 'anime/assets';
+const commitMessage = process.argv.slice(2).join(' ') || 'update entries';
 
 if (!GITHUB_TOKEN) {
   console.error('GIFFY_GH_PAT not set');
@@ -43,5 +46,5 @@ if (toUpload.length === 0) {
 }
 
 execSync('git add anime/entries.json', { stdio: 'inherit' });
-execSync('git commit -m "update entries"', { stdio: 'inherit' });
+execSync(`git commit -m "${commitMessage}"`, { stdio: 'inherit' });
 execSync('git push', { stdio: 'inherit' });
