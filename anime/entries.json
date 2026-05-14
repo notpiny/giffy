@@ -2139,7 +2139,11 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "m4f",
+            "inside",
+            "looping"
+        ],
         "type": "anim",
         "file": "YQRDmiyV",
         "formats": [
@@ -2149,7 +2153,10 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "m4f",
+            "flowers"
+        ],
         "type": "anim",
         "file": "74xjZTEA",
         "formats": [
@@ -2159,7 +2166,12 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "talking",
+            "surprise",
+            "monochrome"
+        ],
         "type": "anim",
         "file": "dnsTSEnX",
         "formats": [
@@ -2169,7 +2181,10 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "surprise"
+        ],
         "type": "anim",
         "file": "dnFjLUqL",
         "formats": [
@@ -2179,7 +2194,11 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "surprise",
+            "outside"
+        ],
         "type": "anim",
         "file": "lcrPaB0T",
         "formats": [
@@ -2189,7 +2208,12 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "m4f",
+            "surprise",
+            "outside",
+            "monochrome"
+        ],
         "type": "anim",
         "file": "l03SnqZi",
         "formats": [
@@ -2199,7 +2223,10 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "outside"
+        ],
         "type": "anim",
         "file": "oCbGTxW8",
         "formats": [
@@ -2209,7 +2236,9 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "m4f"
+        ],
         "type": "anim",
         "file": "RFvLJK3u",
         "formats": [
@@ -2219,7 +2248,9 @@
     },
     {
         "category": "kiss",
-        "tags": [],
+        "tags": [
+            "m4f"
+        ],
         "type": "anim",
         "file": "MB9o4gNS",
         "formats": [
@@ -2229,7 +2260,10 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "m4f",
+            "inside"
+        ],
         "type": "anim",
         "file": "eFNh0y-t",
         "formats": [
@@ -2239,7 +2273,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "outside",
+            "looping"
+        ],
         "type": "anim",
         "file": "heeDLOL3",
         "formats": [
@@ -2249,7 +2287,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "inside",
+            "looping",
+            "a4f"
+        ],
         "type": "anim",
         "file": "ryA-9fUO",
         "formats": [
@@ -2259,7 +2302,10 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "inside"
+        ],
         "type": "anim",
         "file": "jHqQCDC5",
         "formats": [
@@ -2269,7 +2315,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "inside",
+            "surprise",
+            "text"
+        ],
         "type": "anim",
         "file": "2tAYbvll",
         "formats": [
@@ -2279,7 +2330,14 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "m4f",
+            "sleep",
+            "inside",
+            "looping",
+            "f4f",
+            "a4f"
+        ],
         "type": "anim",
         "file": "XI5i6Zb4",
         "formats": [
@@ -2289,7 +2347,10 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "inside"
+        ],
         "type": "anim",
         "file": "GgTY45Ry",
         "formats": [
@@ -2299,7 +2360,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "outside",
+            "talking"
+        ],
         "type": "anim",
         "file": "AJZT32Wh",
         "formats": [
@@ -2309,7 +2374,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "talking",
+            "watermark"
+        ],
         "type": "anim",
         "file": "VmMMxhXQ",
         "formats": [
@@ -2319,7 +2388,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "outside",
+            "looping",
+            "surprise"
+        ],
         "type": "anim",
         "file": "r0xuUH_8",
         "formats": [
@@ -2329,7 +2403,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "outside",
+            "looping"
+        ],
         "type": "anim",
         "file": "yn5rqVJb",
         "formats": [
@@ -2339,7 +2417,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "outside",
+            "looping",
+            "watermark"
+        ],
         "type": "anim",
         "file": "171J1GeY",
         "formats": [
@@ -2349,7 +2432,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "looping",
+            "inside"
+        ],
         "type": "anim",
         "file": "7BpD895g",
         "formats": [
@@ -2359,7 +2446,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "outside",
+            "looping",
+            "talking"
+        ],
         "type": "anim",
         "file": "QMxCd1tk",
         "formats": [
@@ -2369,7 +2461,13 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "inside",
+            "looping",
+            "a4f",
+            "m4m"
+        ],
         "type": "anim",
         "file": "B7mX5UNG",
         "formats": [
@@ -2379,7 +2477,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "a4f",
+            "looping",
+            "f4f",
+            "m4f"
+        ],
         "type": "anim",
         "file": "kSfUj7DA",
         "formats": [
@@ -2389,7 +2492,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "m4f",
+            "surprise",
+            "inside"
+        ],
         "type": "anim",
         "file": "WYDWt6GJ",
         "formats": [
@@ -2399,7 +2506,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "looping",
+            "surprise",
+            "3d",
+            "m4f"
+        ],
         "type": "anim",
         "file": "HpdZ4vpa",
         "formats": [
@@ -2409,7 +2521,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "a4f",
+            "surprise",
+            "m4f",
+            "f4f"
+        ],
         "type": "anim",
         "file": "0LZiaFET",
         "formats": [
@@ -2419,7 +2536,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4x",
+            "looping",
+            "a4x"
+        ],
         "type": "anim",
         "file": "b9hOYTru",
         "formats": [
@@ -2429,7 +2550,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "inside",
+            "a4f"
+        ],
         "type": "anim",
         "file": "HJkpyJTt",
         "formats": [
@@ -2439,7 +2564,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "surprise",
+            "f4f",
+            "inside"
+        ],
         "type": "anim",
         "file": "JyYEF0SA",
         "formats": [
@@ -2449,7 +2578,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "watermark",
+            "a4f",
+            "f4f",
+            "m4f"
+        ],
         "type": "anim",
         "file": "2q8b8FrD",
         "formats": [
@@ -2459,7 +2593,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "a4f",
+            "f4f",
+            "m4f"
+        ],
         "type": "anim",
         "file": "BQNXgOAe",
         "formats": [
@@ -2469,7 +2607,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4a",
+            "f4f",
+            "inside",
+            "surprise"
+        ],
         "type": "anim",
         "file": "53Xs3DHO",
         "formats": [
@@ -2479,7 +2622,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "m4f",
+            "a4f",
+            "f4f",
+            "surprise"
+        ],
         "type": "anim",
         "file": "KoTgtkmI",
         "formats": [
@@ -2489,7 +2637,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "looping",
+            "outside",
+            "school"
+        ],
         "type": "anim",
         "file": "9I6fs2md",
         "formats": [
@@ -2499,7 +2652,13 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "a4f",
+            "m4f",
+            "f4f",
+            "looping",
+            "sleep"
+        ],
         "type": "anim",
         "file": "VX9lu4n0",
         "formats": [
@@ -2509,7 +2668,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "looping",
+            "text",
+            "watermark"
+        ],
         "type": "anim",
         "file": "5emXnQQ8",
         "formats": [
@@ -2519,7 +2683,10 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "looping"
+        ],
         "type": "anim",
         "file": "mjG8qs6r",
         "formats": [
@@ -2529,7 +2696,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4a",
+            "f4m",
+            "real",
+            "looping"
+        ],
         "type": "anim",
         "file": "xAYvv8lc",
         "formats": [
@@ -2539,7 +2711,14 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "a4f",
+            "m4f",
+            "f4f",
+            "happy",
+            "watermark",
+            "looping"
+        ],
         "type": "anim",
         "file": "uHMo4eMe",
         "formats": [
@@ -2549,7 +2728,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "surprise",
+            "f4m",
+            "inside"
+        ],
         "type": "anim",
         "file": "Ff0O4cU0",
         "formats": [
@@ -2559,7 +2742,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "a4f",
+            "m4f",
+            "f4f"
+        ],
         "type": "anim",
         "file": "ihkr_0AL",
         "formats": [
@@ -2569,7 +2756,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "inside",
+            "looping"
+        ],
         "type": "anim",
         "file": "hxqpkOrb",
         "formats": [
@@ -2579,7 +2770,13 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "inside",
+            "talking",
+            "looping",
+            "happy"
+        ],
         "type": "anim",
         "file": "I7afWBBX",
         "formats": [
@@ -2589,7 +2786,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "bocchi",
+            "f4f",
+            "inside",
+            "looping"
+        ],
         "type": "anim",
         "file": "wgTqHRZp",
         "formats": [
@@ -2599,7 +2801,10 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4m",
+            "school"
+        ],
         "type": "anim",
         "file": "ppO1itHw",
         "formats": [
@@ -2609,7 +2814,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "m4m",
+            "looping",
+            "text"
+        ],
         "type": "anim",
         "file": "Hi3j8TG4",
         "formats": [
@@ -2619,7 +2828,11 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "x4f",
+            "looping",
+            "inside"
+        ],
         "type": "anim",
         "file": "8aT-9R2c",
         "formats": [
@@ -2629,7 +2842,12 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4a",
+            "f4m",
+            "inside",
+            "happy"
+        ],
         "type": "anim",
         "file": "JK57mR7o",
         "formats": [
@@ -2639,7 +2857,13 @@
     },
     {
         "category": "poke",
-        "tags": [],
+        "tags": [
+            "f4f",
+            "a4f",
+            "m4f",
+            "text",
+            "inside"
+        ],
         "type": "anim",
         "file": "lg4em2RK",
         "formats": [
